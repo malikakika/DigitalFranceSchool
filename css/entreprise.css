@@ -1,0 +1,82 @@
+nav {
+    background-color: transparent;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 5%;
+    text-align: left;
+
+}
+
+h3 {
+    color: white;
+    padding-top: 10%;
+    text-align: left;
+
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.description {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.table-hover:hover .description {
+    display: block;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+.modal-content {
+    background-color: #122D64;
+    color: white;
+    border: 1px solid #78A2DC;
+}
+
+.modal-header {
+    border-bottom: 1px solid #78A2DC;
+}
+
+.form-label {
+    color: white;
+}
+
+.email-icon {
+    color: white;
+    /* ou toute autre couleur blanche souhaitée */
+}
+
+.scroll-animate {
+    opacity: 0;
+    /* Par défaut, l'élément est transparent */
+    transform: translateY(20px);
+    /* Par défaut, déplacez l'élément vers le bas */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    /* Ajoutez une transition pour une animation fluide */
+}
+
+.scroll-animate.animate {
+    opacity: 1;
+    /* Lorsque la classe "animate" est ajoutée, l'élément devient opaque */
+    transform: translateY(0);
+    /* Lorsque la classe "animate" est ajoutée, l'élément revient à sa position initiale */
+}
+
+.ligne-regroupee {
+
+    font-weight: bold;
+
+}

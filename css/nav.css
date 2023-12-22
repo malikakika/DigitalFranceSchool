@@ -1,0 +1,59 @@
+.nav-link {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.fixed-top {
+    transition: background-color 0.3s ease;
+    /* Ajoutez une transition pour une animation en douceur */
+}
+
+/* Ajoutez une classe pour la couleur de fond initiale */
+.navbar.transparent {
+    background-color: transparent !important;
+}
+
+.no-arrow .dropdown-toggle::after {
+    display: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    width: 100px;
+    /* ajustez la largeur selon vos besoins */
+    height: auto;
+    /* cela garantit que la hauteur s'ajuste proportionnellement à la largeur */
+}
+
+@media (min-width: 1200px) {
+    .navbar-nav {
+        margin-left: 400px;
+        /* Appliqué uniquement pour les écrans larges */
+    }
+
+    .nav-item {
+        margin-left: 30px;
+        /* Appliqué uniquement pour les écrans larges */
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .navbar-brand img {
+        width: 60px;
+        /* ajustez la largeur selon vos besoins */
+        height: auto;
+        /* cela garantit que la hauteur s'ajuste proportionnellement à la largeur */
+    }
+}

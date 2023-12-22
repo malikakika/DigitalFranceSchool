@@ -1,0 +1,216 @@
+body {
+
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+
+
+
+    margin: 0;
+    padding: 0;
+    font-family: Cambria,
+        Cochin,
+        Georgia,
+        Times,
+        'Times New Roman',
+        serif;
+}
+
+.background-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Assurez-vous que la vidéo couvre tout le conteneur */
+    z-index: -1;
+    /* Mettez la vidéo en arrière-plan par rapport au texte */
+}
+
+
+
+
+#acceuil {
+    margin-top: 8%;
+    margin-bottom: 2%;
+    text-align: center;
+    /* Ajustez la valeur en fonction de la hauteur de votre barre de navigation */
+}
+
+.acceuil-title {
+    font-size: 7rem;
+    font-weight: bold;
+    color: white
+}
+
+.acceuil-subtitle {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.acceuil-subsubtitle {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.charte {
+    font-size: 1rem;
+    max-width: 600px;
+    margin-left: 20px;
+
+}
+
+.small-image {
+    max-width: 55px;
+    max-height: 55px;
+    width: auto;
+    height: auto;
+}
+
+.titre-charte {
+    text-align: center;
+}
+
+
+.card-custom {
+    height: 500px;
+    border: 3px solid #122D64;
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.fixed-height {
+    margin-bottom: 10%;
+    text-align: center;
+    color: #122D64;
+}
+
+
+#formations {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.section-title {
+    color: #122D64;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #122D64;
+}
+
+
+
+
+
+
+#partenaire {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#partenaire img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#partenaire img:not(:first-child) {
+    width: 200px;
+    /* Ajustez la taille selon vos besoins */
+    height: auto;
+    /* Pour conserver les proportions de l'image */
+    transform-origin: 100% 50%;
+}
+
+#partenaire img:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(10deg) translateX(300px) rotate(-10deg);
+}
+
+#partenaire img:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(60deg) translateX(300px) rotate(-60deg);
+}
+
+#partenaire img:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(135deg) translateX(300px) rotate(-135deg);
+}
+
+#partenaire img:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(300px) rotate(-180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    #acceuil {
+        margin-top: 15%;
+        margin-bottom: 2%;
+        text-align: center;
+        /* Ajustez la valeur en fonction de la hauteur de votre barre de navigation */
+    }
+
+    .acceuil-title {
+        font-size: 2rem;
+    }
+
+    .acceuil-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .acceuil-subsubtitle {
+        font-size: 0.8rem;
+    }
+
+
+
+    .small-image {
+        max-width: 20px;
+        max-height: 20px;
+        width: auto;
+        height: auto;
+    }
+}

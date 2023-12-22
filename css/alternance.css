@@ -1,0 +1,54 @@
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 25%;
+    padding-bottom: 25%;
+
+}
+
+p {
+    padding: 5%;
+    font-size: 1.5rem;
+}
+
+.scroll-animate {
+    opacity: 0;
+    /* Par défaut, l'élément est transparent */
+    transform: translateY(20px);
+    /* Par défaut, déplacez l'élément vers le bas */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    /* Ajoutez une transition pour une animation fluide */
+}
+
+.scroll-animate.animate {
+    opacity: 1;
+    /* Lorsque la classe "animate" est ajoutée, l'élément devient opaque */
+    transform: translateY(0);
+    /* Lorsque la classe "animate" est ajoutée, l'élément revient à sa position initiale */
+}
+
+.descriptionP {
+    font-weight: 300;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    /* Assurez-vous que z-index est supérieur à celui des autres éléments de la page si nécessaire */
+}
+
+.description {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.table-hover:hover .description {
+    display: block;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1rem;
+}
