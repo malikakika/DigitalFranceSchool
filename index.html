@@ -10,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-ZpIMC1xwq3cywUsy7E5H5qDIbqMr1glT2OM8j5fcV1T5JZCZYKZl5LGOqEpMQQIv" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -54,8 +56,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="pages/encours.html">Admission</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/alternance.html">Alternance</a>
+                        <li class="nav-item dropdown hover no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCampus" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Alternance
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownCampus">
+                                <a class="dropdown-item" href="pages/alternance.html">Alternance</a>
+                                <a class="dropdown-item" href="pages/entreprise.html">Entreprise : Déposer une offre</a>
+
+
+                            </div>
                         </li>
                         <li class="nav-item dropdown hover no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCampus" role="button"
@@ -80,6 +91,8 @@
                                 <a class="dropdown-item" href="#NousSomme">Qui sommes-nous</a>
                                 <a class="dropdown-item" href="#mission">Notre missions</a>
                                 <a class="dropdown-item" href="#formations">Nos formation</a>
+                                <a class="dropdown-item" href="#pourquoinous">Pourquoi nous choisir</a>
+
                                 <a class="dropdown-item" href="#partenaire">Nos partenaires</a>
 
                             </div>
@@ -125,7 +138,7 @@
             <div class="col-md-3 col-sm-6">
                 <img src="assets/images/graduation.png" class="img-fluid small-image">
                 <h4>Diplôme</h4>
-                <p> Titre RNCP certifié</p>
+                <p> Titre RNCP de niveau 4,5 et 6</p>
             </div>
 
             <!-- Section 3: Alternance -->
@@ -160,32 +173,44 @@
             <br>
             <div class="row">
                 <!-- Colonne de texte -->
+                <h1 class="section-title">Découvrez l'avenir avec Digital France School </h1>
+
                 <div class="col-md-6 d-flex align-items-center animate__animated animate__fadeInLeft">
                     <p class="text-justify charte">
-
-                        🌐 Engagés pour l'égalité des chances, nous formons 5000 personnes, notamment issues des
-                        quartiers prioritaires, du RSA et des demandeurs d'emploi, au travers de Bootcamps gratuits
-                        et d'alternances. Signataires de la charte "Le Digital, levier pour l'égalité des chances" ,
-                        nous sommes reconnus et labellisés. <br>
-
-
-                        🎓 Nos formations couvrent des métiers en tension du digital tels que concepteur
-                        développeur,
-                        développeur web et mobile, chargé de webdesign et marketing digital, community manager,
-                        technicien
-                        d'assistance en informatique, technicien systèmes et réseaux (cybersécurité), et développeur
-                        en
-                        Intelligence Artificielle.
+                        <b>Digital France School</b> s'engage résolument à façonner l'avenir numérique en proposant des
+                        formations de pointe dans des domaines clés tels que le Développeur Web et Mobile, le Concepteur
+                        Développeur d'application, et bien d'autres. Notre collaboration avec la <b> CMA 95 </b>
+                        témoigne de
+                        notre implication dans la formation de 500 apprentis, avec une approche individualisée et un
+                        suivi continu. Nous allons au-delà de la formation technique en intégrant le développement des
+                        "soft skills".
+                        <br>
+                        Dans un effort significatif pour promouvoir l'égalité des chances, nous formons activement<b>
+                            5000
+                            personnes </b>, notamment issues des quartiers prioritaires, du RSA et des demandeurs
+                        d'emploi, grâce
+                        à des Bootcamps gratuits et des alternances. En tant que signataires de la charte <b> "Le
+                            Digital,
+                            levier pour l'égalité des chances" </b>, notre engagement est reconnu et labellisé.
+                        <br>
+                        <b> Rejoignez-nous dans cette initiative transformative, où le
+                            digital
+                            devient un véritable levier d'inclusion, ouvrant des portes vers un avenir numérique pour
+                            tous.</b>
                     </p>
                 </div>
                 <div class="col-md-6 animate__animated animate__fadeInRight">
                     <img src="assets/images/charte1.jpeg" class="img-fluid" alt="Charte Image">
+                    <button type="button" class="btn call-btn" style="background-color: transparent;">
+                        <a href="pages/alternance.html">Voir nos offres en alternance</a>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
     <br><br>
     <section id="mission">
+        <h1 class="section-title"> Notre Mission </h1>
         <div class="container-fluid">
             <div class="row d-flex flex-wrap">
                 <div class="col-md-3 d-flex flex-column scroll-reveal">
@@ -242,10 +267,200 @@
     </section>
 
     <section id="formations">
+        <div class="container">
+
+            <h1 class="section-title"> Nous avons le titre RNCP </h1>
+
+
+
+            <div class="container-fluid scroll-animate-once">
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="container mt-4">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Métier recherché</th>
+                                        <th scope="col">Titre RNCP</th>
+                                        <th scope="col"> Dates de formation </th>
+                                        <th scope="col"> Date d'embauche prévisionnelle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="ligne-regroupee ">
+                                        <td style="background-color: #122D64; color: white;">Janvier</td>
+                                        <td style="background-color: #122D64;"></td>
+                                        <td style="background-color: #122D64;"></td>
+                                        <td style="background-color: #122D64;"></td>
+                                    </tr>
+                                    <!-- Lignes de données -->
+                                    <tr>
+                                        <td class="table-hover">
+                                            <div>
+                                                <span>Concepteur Développeur d'Application</span>
+                                                <div class="description">Le concepteur développeur d'applications
+                                                    développe
+                                                    les
+                                                    interfaces utilisateur et les traitements métier de
+                                                    l'application avec
+                                                    des
+                                                    composants sécurisés. <br>
+                                                    Il conçoit ou modifie le modèle des données de l'application,
+                                                    permettant
+                                                    la
+                                                    création ou la modification des bases de données.</div>
+                                            </div>
+                                        </td>
+                                        <td class="table-hover">
+
+                                            <div>
+                                                <span> RNCP Niveau 6 </span>
+                                                <div class="description"> Bac+3</div>
+                                            </div>
+                                        </td>
+                                        <td>15/01/2024 </td>
+                                        <td>Date</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-hover">
+                                            <div>
+                                                <span>Technicien d'Assistance Informatique </span>
+                                                <div class="description">Le/la technicien/ne d'assistance en
+                                                    informatique
+                                                    installe, configure et dépanne les postes informatiques fixes ou
+                                                    mobiles,
+                                                    ainsi que leurs périphériques, afin d'adapter le poste de
+                                                    travail aux
+                                                    besoins des utilisateurs.</div>
+                                            </div>
+                                        </td>
+                                        <td class="table-hover">
+
+                                            <div>
+                                                <span> RNCP Niveau 4 </span>
+                                                <div class="description"> BAC </div>
+                                            </div>
+
+                                        </td>
+                                        <td>29/01/2024</td>
+                                        <td>Date</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="table-hover">
+                                            <div>
+                                                <span>Développeur Web et Mobile </span>
+                                                <div class="description">Le développeur web mobile est en charge de
+                                                    la
+                                                    programmation des fonctionnalités d'un site web accessible sur
+                                                    mobile ou
+                                                    d'une application mobile. Il travaille aussi sur la partie
+                                                    design.<br>
+                                                    Créativité, sens de l'écoute, maîtrise technique et polyvalence
+                                                    sont les
+                                                    mots d'ordre du développeur web mobile.</div>
+                                            </div>
+                                        </td>
+                                        <td class="table-hover">
+
+                                            <div>
+                                                <span> RNCP Niveau 5 </span>
+                                                <div class="description">
+                                                    BAC+2
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Date</td>
+                                        <td>Date</td>
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td class="table-hover">
+                                            <div>
+                                                <span>Marketing Digital-Web Design </span>
+                                                <div class="description"> le chargé de webdesign et marketing
+                                                    digital doit
+                                                    être
+                                                    capable de mettre en place le storytelling et le branding
+                                                    digital d'une
+                                                    marque, créer des supports de communication web et vidéo, gérer
+                                                    des
+                                                    communautés en ligne, la relation avec des influenceurs...</div>
+                                            </div>
+                                        </td>
+                                        <td class="table-hover">
+
+                                            <div>
+                                                <span> RNCP Niveau 5 </span>
+                                                <div class="description"> BAC+2</div>
+                                            </div>
+                                        </td>
+                                        <td>Date</td>
+                                        <td>Date</td>
+                                    </tr>
+
+                                    <tr class="ligne-regroupee">
+                                        <td style="background-color: #122D64; color: white;">Prochainement</td>
+                                        <td style="background-color: #122D64;"></td>
+                                        <td style="background-color: #122D64;"></td>
+                                        <td style="background-color: #122D64;"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Consultant Sales Force</td>
+                                        <td>
+                                            <div>
+                                                <span> RNCP Niveau </span>
+                                                <div class="description"></div>
+                                            </div>
+                                        </td>
+                                        <td>Date</td>
+                                        <td>Date</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
     </section>
 
+    <section id="pourquoinous">
+        <h1 class="section-title">Pourquoi Nous Rejoindre?</h1>
+        <div class="container scroll-animate-once">
+            <div class="row">
 
+                <div class="col-md-6">
+
+                    <ul>
+                        <li>
+                            <p>Formations reconnues par l'État avec des titres RNCP de niveaux 4, 5 et 6</p>
+                        </li>
+                        <li>
+                            <p>Enseignants issus du monde professionnel pour des projets concrets en entreprise</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>
+                            <p>Véritable expérience professionnelle grâce à l'alternance</p>
+                        </li>
+                        <li>
+                            <p>100 000 entreprises vous attendent pour l'alternance</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    </section>
 
 
     <!--  <section id="partenaire">

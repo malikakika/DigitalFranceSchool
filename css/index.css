@@ -16,6 +16,41 @@
 }
 
 
+.scroll-animate {
+    opacity: 0;
+    /* Par défaut, l'élément est transparent */
+    transform: translateY(20px);
+    /* Par défaut, déplacez l'élément vers le bas */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    /* Ajoutez une transition pour une animation fluide */
+}
+
+.scroll-animate.animate {
+    opacity: 1;
+    /* Lorsque la classe "animate" est ajoutée, l'élément devient opaque */
+    transform: translateY(0);
+    /* Lorsque la classe "animate" est ajoutée, l'élément revient à sa position initiale */
+}
+
+/* Personnalisation de l'apparence de la section "Pourquoi Nous Rejoindre?" */
+#pourquoinous {
+    padding: 80px 0;
+    /* Ajuster l'espacement selon vos préférences */
+}
+
+
+
+/* Style pour les paragraphes dans la liste */
+#pourquoinous p {
+    font-size: 1.5rem;
+    /* Taille de police personnalisée */
+    line-height: 1.6;
+    /* Hauteur de ligne personnalisée */
+}
+
+
+
+
 
 
 #acceuil {
@@ -45,7 +80,7 @@
 
 .charte {
     font-size: 1rem;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: 20px;
 
 }
@@ -96,7 +131,23 @@
 }
 
 
+.description {
+    display: none;
+    transition: all 0.3s ease;
+}
 
+.table-hover:hover .description {
+    display: block;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.section-title {
+    text-align: center;
+}
 
 
 
@@ -135,4 +186,30 @@
 
 #partenaire img:nth-child(5) {
     transform: translate(-50%, -50%) rotate(180deg) translateX(300px) rotate(-180deg);
+}
+
+
+/* Style pour le bouton */
+.call-btn {
+    background-color: transparent;
+    color: #122D64;
+    border: 4px solid #122D64;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.call-btn:hover {
+    background-color: #122D64;
+    color: #122D64;
+    /* Couleur du texte au survol */
+    box-shadow: 0 0 60px #122D64;
+    transform: scale(1.1);
+}
+
+.call-btn a {
+    color: inherit;
+    text-decoration: none;
 }
