@@ -1,6 +1,7 @@
 .nav-link {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .navbar.fixed-top {
@@ -12,10 +13,8 @@
 
 .navbar.fixed-top {
     transition: background-color 0.3s ease;
-    /* Ajoutez une transition pour une animation en douceur */
 }
 
-/* Ajoutez une classe pour la couleur de fond initiale */
 .navbar.transparent {
     background-color: transparent !important;
 }
@@ -30,20 +29,16 @@ a {
 
 .navbar-brand img {
     width: 100px;
-    /* ajustez la largeur selon vos besoins */
     height: auto;
-    /* cela garantit que la hauteur s'ajuste proportionnellement à la largeur */
 }
 
 @media (min-width: 1200px) {
     .navbar-nav {
-        margin-left: 400px;
-        /* Appliqué uniquement pour les écrans larges */
+        margin-left: 250px;
     }
 
     .nav-item {
-        margin-left: 30px;
-        /* Appliqué uniquement pour les écrans larges */
+        margin-left: 20px;
     }
 }
 
@@ -52,8 +47,6 @@ a {
 @media (max-width: 1200px) {
     .navbar-brand img {
         width: 60px;
-        /* ajustez la largeur selon vos besoins */
         height: auto;
-        /* cela garantit que la hauteur s'ajuste proportionnellement à la largeur */
     }
 }

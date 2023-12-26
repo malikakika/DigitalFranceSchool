@@ -55,7 +55,7 @@
 
 #acceuil {
     margin-top: 8%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     text-align: center;
     /* Ajustez la valeur en fonction de la hauteur de votre barre de navigation */
 }
@@ -214,13 +214,70 @@ span {
     text-decoration: none;
 }
 
+.inscrire {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
+.recrute {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sous-titre-charte {
+    color: #122D64;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/* Ajouter une animation de flottement uniquement à la classe bouton-flottant */
+@keyframes floating {
+    50% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Styliser le bouton avec la classe bouton-flottant */
+.bouton-flottant {
+    /* Ajouter des styles de base */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #122D64;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Ajouter l'animation de flottement */
+    animation: floating 2s infinite;
+}
+
+/* Styliser le lien à l'intérieur du bouton */
+.bouton-flottant a {
+    text-decoration: none;
+    color: #fff;
+}
 
 
 @media (max-width: 1200px) {
     #acceuil {
-        margin-top: 15%;
-        margin-bottom: 2%;
+        margin-top: 20%;
+        margin-bottom: 12%;
         text-align: center;
         /* Ajustez la valeur en fonction de la hauteur de votre barre de navigation */
     }

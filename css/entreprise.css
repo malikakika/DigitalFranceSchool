@@ -38,6 +38,12 @@ span {
     font-size: 1rem;
 }
 
+.recrute {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 
 .modal-content {
