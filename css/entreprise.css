@@ -18,7 +18,9 @@ h3 {
 
 }
 
-h2 {
+
+
+.POEI {
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
@@ -85,4 +87,23 @@ span {
 
     font-weight: bold;
 
+}
+
+.charte-description {
+    font-size: 1.2rem;
+    text-align: justify;
+    /* Justification du texte */
+    max-width: 800px;
+    /* Longueur maximale de chaque ligne */
+    margin-left: 20px;
+    /* Marge à gauche du texte */
+}
+
+.titre-charte {
+    text-align: justify;
+    /* Justification du texte */
+    max-width: 800px;
+    /* Longueur maximale de chaque ligne */
+    margin-left: 20px;
+    /* Marge à gauche du texte */
 }

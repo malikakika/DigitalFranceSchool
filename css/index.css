@@ -11,9 +11,11 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    /* Assurez-vous que la vidéo couvre tout le conteneur */
     z-index: -1;
-    /* Mettez la vidéo en arrière-plan par rapport au texte */
+    filter: blur(7px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    /* Standard syntax */
 }
 
 
@@ -315,6 +317,7 @@ span {
         width: auto;
         height: auto;
     }
+
 
 
 
