@@ -1,6 +1,7 @@
 .background-wrapper {
     position: relative;
     overflow: hidden;
+    min-height: 0vh;
 }
 
 #background-video {
@@ -55,7 +56,6 @@
 
 #acceuil {
     margin-top: 8%;
-    margin-bottom: 5%;
     text-align: center;
     /* Ajustez la valeur en fonction de la hauteur de votre barre de navigation */
 }
@@ -228,13 +228,6 @@ span {
     font-weight: bold;
 }
 
-.sous-titre-charte {
-    color: #122D64;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-}
 
 
 /* Ajouter une animation de flottement uniquement à la classe bouton-flottant */
@@ -277,10 +270,30 @@ span {
 @media (max-width: 1200px) {
     #acceuil {
         margin-top: 20%;
-        margin-bottom: 12%;
         text-align: center;
         /* Ajustez la valeur en fonction de la hauteur de votre barre de navigation */
     }
+
+    .bouton-flottant {
+        /* Ajouter des styles de base */
+        padding: 5px 10px;
+        font-size: 10px;
+        background-color: #122D64;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        /* Ajouter l'animation de flottement */
+        animation: floating 2s infinite;
+    }
+
+    /* Styliser le lien à l'intérieur du bouton */
+    .bouton-flottant a {
+        text-decoration: none;
+        color: #fff;
+    }
+
 
     .acceuil-title {
         font-size: 2rem;
@@ -302,4 +315,7 @@ span {
         width: auto;
         height: auto;
     }
+
+
+
 }
