@@ -1,17 +1,32 @@
-ScrollReveal().reveal('.scroll-animate-once', {
-    delay: 200,
-    distance: '20px',
-    origin: 'bottom',
-    reset: true,
+document.addEventListener("DOMContentLoaded", function () {
+    // Vérifiez si l'utilisateur a déjà accepté les cookies
+    const userAcceptedCookies = localStorage.getItem("userAcceptedCookies");
+
+    // Si l'utilisateur n'a pas encore accepté les cookies, affichez la popup
+    if (!userAcceptedCookies) {
+        // Afficher la modal Bootstrap
+        $('#cookieModal').modal('show');
+    }
+});
+
+// Optionnel : Ajoutez un gestionnaire d'événements pour enregistrer le consentement lorsque l'utilisateur clique sur le bouton "Accepter"
+document.getElementById('accept-btn').addEventListener('click', function () {
+    // Enregistrez le consentement dans le stockage local
+    localStorage.setItem("userAcceptedCookies", true);
+    // Fermez la modal Bootstrap
+    $('#cookieModal').modal('hide');
 });
 
 
 
 
 
-
-
-
+ScrollReveal().reveal('.scroll-animate-once', {
+    delay: 200,
+    distance: '20px',
+    origin: 'bottom',
+    reset: true,
+});
 
 function isElementInViewport(element) {
     var rect = element.getBoundingClientRect();

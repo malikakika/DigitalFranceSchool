@@ -52,10 +52,6 @@
 }
 
 
-
-
-
-
 #acceuil {
     margin-top: 8%;
     text-align: center;
@@ -151,45 +147,76 @@ span {
     text-align: center;
 }
 
-
-
 #partenaire {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+}
+
+.image-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #partenaire img {
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#partenaire img:not(:first-child) {
-    width: 200px;
-    /* Ajustez la taille selon vos besoins */
+#partenaire img.center {
+    width: 100px;
+    /* Taille de l'image centrale */
+}
+
+#partenaire img:not(.center) {
+    width: 150px;
+    /* Taille des autres images */
     height: auto;
-    /* Pour conserver les proportions de l'image */
     transform-origin: 100% 50%;
 }
 
 #partenaire img:nth-child(2) {
-    transform: translate(-50%, -50%) rotate(10deg) translateX(300px) rotate(-10deg);
+    transform: translate(-50%, -50%) rotate(20deg) translateX(15vw) rotate(-20deg);
 }
 
 #partenaire img:nth-child(3) {
-    transform: translate(-50%, -50%) rotate(60deg) translateX(300px) rotate(-60deg);
+    transform: translate(-50%, -50%) rotate(60deg) translateX(15vw) rotate(-60deg);
 }
 
 #partenaire img:nth-child(4) {
-    transform: translate(-50%, -50%) rotate(135deg) translateX(300px) rotate(-135deg);
+    transform: translate(-50%, -50%) rotate(100deg) translateX(15vw) rotate(-100deg);
 }
 
 #partenaire img:nth-child(5) {
-    transform: translate(-50%, -50%) rotate(180deg) translateX(300px) rotate(-180deg);
+    transform: translate(-50%, -50%) rotate(140deg) translateX(15vw) rotate(-140deg);
 }
 
+#partenaire img:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(15vw) rotate(-180deg);
+}
+
+#partenaire img:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(220deg) translateX(15vw) rotate(-220deg);
+}
+
+#partenaire img:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(260deg) translateX(15vw) rotate(-260deg);
+}
+
+#partenaire img:nth-child(9) {
+    transform: translate(-50%, -50%) rotate(300deg) translateX(15vw) rotate(-300deg);
+}
+
+#partenaire img:nth-child(10) {
+    transform: translate(-50%, -50%) rotate(340deg) translateX(15vw) rotate(-340deg);
+}
+
+#partenaire img:nth-child(11) {
+    transform: translate(-50%, -50%) rotate(380deg) translateX(15vw) rotate(-380deg);
+}
 
 /* Style pour le bouton */
 .call-btn {
@@ -269,7 +296,7 @@ span {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
     #acceuil {
         margin-top: 20%;
         text-align: center;
@@ -318,7 +345,79 @@ span {
         height: auto;
     }
 
+    #partenaire {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .image-container {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
 
 
+
+    #partenaire img {
+        position: absolute;
+
+
+        transform: translate(-50%, -50%);
+    }
+
+    #partenaire img.center {
+        width: 100px;
+        /* Taille de l'image centrale */
+    }
+
+    #partenaire img:not(.center) {
+        width: 50px;
+        /* Taille des autres images */
+        height: auto;
+        transform-origin: 100% 50%;
+    }
+
+    #partenaire img:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(20deg) translateX(100px) rotate(-20deg);
+    }
+
+    #partenaire img:nth-child(3) {
+        transform: translate(-50%, -50%) rotate(60deg) translateX(100px) rotate(-60deg);
+    }
+
+    #partenaire img:nth-child(4) {
+        transform: translate(-50%, -50%) rotate(100deg) translateX(100px) rotate(-100deg);
+    }
+
+    #partenaire img:nth-child(5) {
+        transform: translate(-50%, -50%) rotate(140deg) translateX(100px) rotate(-140deg);
+    }
+
+    #partenaire img:nth-child(6) {
+        transform: translate(-50%, -50%) rotate(180deg) translateX(100px) rotate(-180deg);
+    }
+
+    #partenaire img:nth-child(7) {
+        transform: translate(-50%, -50%) rotate(220deg) translateX(100px) rotate(-220deg);
+    }
+
+    #partenaire img:nth-child(8) {
+        transform: translate(-50%, -50%) rotate(260deg) translateX(100px) rotate(-260deg);
+    }
+
+    #partenaire img:nth-child(9) {
+        transform: translate(-50%, -50%) rotate(300deg) translateX(100px) rotate(-300deg);
+    }
+
+    #partenaire img:nth-child(10) {
+        transform: translate(-50%, -50%) rotate(340deg) translateX(100px) rotate(-340deg);
+    }
+
+    #partenaire img:nth-child(11) {
+        transform: translate(-50%, -50%) rotate(380deg) translateX(100px) rotate(-380deg);
+    }
 }

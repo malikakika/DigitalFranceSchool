@@ -4,3 +4,8 @@
     color: #fff;
     /* Couleur du texte blanc (#fff) */
 }
+
+.footer-brand img {
+    width: 60px;
+    height: auto;
+}

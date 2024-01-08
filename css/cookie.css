@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cookie-container {
+    text-align: center;
+    margin: 50px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    color: #fff;
+}
+
+#accept-btn {
+    background-color: #4caf50;
+}
+
+#refuse-btn {
+    background-color: #f44336;
+}
