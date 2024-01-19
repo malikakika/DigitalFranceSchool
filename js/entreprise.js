@@ -137,7 +137,8 @@ function envoyerFormulaire() {
 // Ajoutez un gestionnaire d'événements au bouton d'envoi du formulaire
 $('#formulaireRecrutement button.btn-primary').click(validerEtEnvoyerFormulaire);
 
-// Ajoutez un gestionnaire d'événements à tous les boutons avec la classe "btn-recrute"
+
+
 $('.btn-contact').click(function () {
     $('#formulaireRecrutement').modal('show'); // Affiche le pop-up
 });

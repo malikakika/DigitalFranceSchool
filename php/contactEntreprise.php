@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $societe = $_POST["societe"];
     $poste = $_POST["poste"];
@@ -11,8 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $descriptif = $_POST["descriptif"];
     $consentement = isset($_POST["consentement"]) ? "Oui" : "Non";
 
-    $to = "votre@email.com";
-    $subject = "Nouvelle offre de stage/alternance/contrat";
+    $to = "malikachoubri@gmail.com";
+    $subject = "Nouvelle offre de $type_offre";
     $headers = "From: $email";
 
     $email_content = "Société: $societe\n";

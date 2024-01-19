@@ -107,3 +107,12 @@ span {
     margin-left: 20px;
     /* Marge à gauche du texte */
 }
+
+.btn-contact a {
+    color: white;
+}
+
+.btn-contact {
+    background-color: #78A2DC;
+
+}

@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
     $consentement = isset($_POST["consentement"]) ? "Oui" : "Non";
 
-    $to = "votre@email.com";
+    $to = "malikachoubri@gmail.com";
     $subject = "Nouveau message de contact - Étudiant";
     $headers = "From: $email";
 

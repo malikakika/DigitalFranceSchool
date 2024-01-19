@@ -1,0 +1,189 @@
+.background-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 0vh;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(7px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    /* Standard syntax */
+}
+
+.acceuil {
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    color: white;
+
+}
+
+p {
+    padding: 5%;
+    font-size: 1.5rem;
+}
+
+.scroll-animate {
+    opacity: 0;
+    /* Par défaut, l'élément est transparent */
+    transform: translateY(20px);
+    /* Par défaut, déplacez l'élément vers le bas */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    /* Ajoutez une transition pour une animation fluide */
+}
+
+.scroll-animate.animate {
+    opacity: 1;
+    /* Lorsque la classe "animate" est ajoutée, l'élément devient opaque */
+    transform: translateY(0);
+    /* Lorsque la classe "animate" est ajoutée, l'élément revient à sa position initiale */
+}
+
+.descriptionP {
+    font-weight: 300;
+}
+
+
+
+.description {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.table-hover:hover .description {
+    display: block;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.inscrire {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@keyframes floating {
+    50% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Styliser le bouton avec la classe bouton-flottant */
+.bouton-flottant {
+    align-items: center;
+    /* Ajouter des styles de base */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #122D64;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Ajouter l'animation de flottement */
+    animation: floating 2s infinite;
+}
+
+/* Styliser le lien à l'intérieur du bouton */
+.bouton-flottant a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.boutton-acceuil {
+    text-align: center;
+}
+
+.bouton-inscris {
+    align-items: center;
+    /* Ajouter des styles de base */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #122D64;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.bouton-inscris a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bouton-inscris {
+    background-color: #122D64;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    /* Ajoutez une marge entre les boutons */
+}
+
+.bouton-inscription {
+    background-color: #122D64;
+    color: #fff;
+    padding: 20px 100px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5%;
+    font-size: 2rem;
+    margin-right: 10%;
+}
+
+
+.bouton-questions {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 20px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5%;
+    font-size: 2rem;
+}
+
+.bouton-questions a {
+    color: white;
+}
+
+.centered-buttons {
+    text-align: center;
+    margin-top: 30px;
+    /* Ajustez la marge supérieure selon vos besoins */
+}
+
+.container-main {
+    margin-bottom: 100px;
+    /* Ajustez la valeur selon la hauteur de votre footer */
+}
+
+/* Si vous souhaitez également ajouter une marge au-dessus du footer, vous pouvez utiliser la classe mt-4 sur le footer */
+.footer-custom {
+    margin-top: 40px;
+    /* Ajustez la valeur selon la marge souhaitée */
+}
